@@ -8,9 +8,9 @@ import Rank from './components/Rank/Rank';
 import ParticlesBg from 'particles-bg';
 import './App.css';
 
-const app = new Clarifai.App({
- apiKey: 'd26f0b1241194550885d238ae4400bb7'
-});
+// const app = new Clarifai.App({
+//  apiKey: 'd26f0b1241194550885d238ae4400bb7'
+// });
 
 class App extends Component {
   constructor() {
@@ -26,16 +26,16 @@ class App extends Component {
 
   onButtonSubmit = () => {
     console.log('click');
-    app.models.predict("6dc7e46bc9124c5c8824be4822abe105", 
-      "https://clarifai.com/clarifai/main/models/face-detection?utm_source=clarifai&utm_medium=referral&inputId=https%3A%2F%2Fs3.amazonaws.com%2Fsamples.clarifai.com%2Ffeatured-models%2Fface-crowd-at-concert.jpg")
-    .then(
-      function(response) {
-          console.log(response);
-      },
-      function(err) {
-          // error
-      }
-    );
+    // app.models.predict("6dc7e46bc9124c5c8824be4822abe105", 
+    //   "https://clarifai.com/clarifai/main/models/face-detection?utm_source=clarifai&utm_medium=referral&inputId=https%3A%2F%2Fs3.amazonaws.com%2Fsamples.clarifai.com%2Ffeatured-models%2Fface-crowd-at-concert.jpg")
+    // .then(
+    //   function(response) {
+    //       console.log(response);
+    //   },
+    //   function(err) {
+    //       // error
+    //   }
+    // );
 }
 
   render(){
